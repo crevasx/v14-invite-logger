@@ -1,0 +1,15 @@
+{
+  "name": "discord-invite-bot",
+  "version": "1.0.0",
+  "description": "Discord.JS Gelişmemiş İnvite Altyapısı",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Crevaa",
+  "license": "ISC",
+  "dependencies": {
+    "croxydb": "^0.0.22",
+    "discord.js": "^14.13.0"
+  }
+}
