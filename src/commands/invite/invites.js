@@ -8,7 +8,7 @@ module.exports = {
         // https://discordjs.guide/slash-commands/advanced-creation.html#adding-options
     execute: async (client, interaction) => {
         let user = interaction.options.getUser("kullanıcı") || interaction.user
-      const amount = db.fetch(`invite_${user.id}`)
+      const amount = db.fetch(`invite_${user.id}`) || 0
       const embed = new Discord.EmbedBuilder()
       .setDescription(`<@${user.id}> adlı kullanıcının **${amount}** daveti bulunuyor.`)
       interaction.reply({embeds: [embed]})
